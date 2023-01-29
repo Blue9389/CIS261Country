@@ -13,7 +13,7 @@ def display_codes(countries):
     codes_line = "Country codes: "
     for code in codes:
         codes_line += code + " "
-    print(countries)
+    print(codes_line)
 
 def view(countries):
     display_codes(countries)
@@ -38,7 +38,7 @@ def add(countries):
         print(f"{name} was added.\n")
 
 def delete(countries):
-    code = input("Enter country code ")
+    code = input("Enter country code: ")
     code = code.upper()
     if code in countries:
         name = countries.pop(code)
